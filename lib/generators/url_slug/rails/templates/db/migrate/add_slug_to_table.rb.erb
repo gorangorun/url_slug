@@ -1,0 +1,5 @@
+class Add<%= config[:column].camelize %>To<%= config[:table].camelize %> < ActiveRecord::Migration<%= migration_version %>
+  def change
+    add_column :<%= config[:table] %>, :<%= config[:column] %>, :string
+  end
+end
